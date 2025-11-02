@@ -31,6 +31,19 @@
         .scroll-offset {
             scroll-margin-top: 80px;
         }
+
+        @font-face {
+            font-family: 'Niagara Solid';
+            src: url('assets/fonts/NiagaraSolid.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .title {
+            font-family: 'Niagara Solid', sans-serif !important;
+            color: #FFF487 !important;
+            font-size: clamp(5rem, 10vw, 8rem);
+        }
     </style>
 </head>
 
@@ -53,12 +66,24 @@
         </div>
     </nav>
 
+
+    <div class="card text-bg-dark border-0 rounded-0">
+        <img src="assets/images/varennafull.png" class="card-img d-none d-md-block rounded-0" alt="Varena, Italy">
+        <img src="assets/images/varennasmall.jpg" class="card-img d-block d-sm-block d-md-none rounded-0"
+            alt="Varena, Italy">
+        <div
+            class="card-img-overlay ps-3 ps-md-5 d-flex flex-column justify-content-end align-items-md-start text-center text-md-start pb-4">
+            <h1 class="card-title text-white lh-1 mt-2 title">Explore Italy</h1>
+            <p class="card-text text-white fs-6 fs-sm-4 fs-md-3 fs-lg-1">open to wonder.</p>
+        </div>
+    </div>
+
     <footer class="bg-light text-center border-top py-4 mt-auto w-100">
         <div class="container">
             <h6 class="fw-bold mb-1">Italy - Open to Wonder</h6>
             <p class="text-muted small mb-0">
-                Disclaimer: I do not own any of the images or videos presented on this page. A reference page containing
-                all media sources is provided.
+                Disclaimer: I do not own any of the images or videos presented on this page. A reference page
+                containing all media sources is provided.
             </p>
         </div>
     </footer>
