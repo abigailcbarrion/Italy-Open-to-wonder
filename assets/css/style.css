@@ -1,0 +1,40 @@
+* {
+    font-family: 'Rethink Sans', sans-serif !important;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.scroll-offset {
+    scroll-margin-top: 80px;
+}
+
+@font-face {
+    font-family: 'Niagara Solid';
+    src: url('assets/fonts/NiagaraSolid.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.title {
+    font-family: 'Niagara Solid', sans-serif !important;
+    color: #FFF487 !important;
+    font-size: clamp(5rem, 10vw, 8rem);
+}

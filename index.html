@@ -7,48 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Explore Italy</title>
-    <style>
-        * {
-            font-family: 'Rethink Sans', sans-serif !important;
-        }
-
-        html,
-        body {
-            height: 100%;
-            overflow-x: hidden;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-
-        footer {
-            margin-top: auto;
-        }
-
-        .scroll-offset {
-            scroll-margin-top: 80px;
-        }
-
-        @font-face {
-            font-family: 'Niagara Solid';
-            src: url('assets/fonts/NiagaraSolid.TTF') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        .title {
-            font-family: 'Niagara Solid', sans-serif !important;
-            color: #FFF487 !important;
-            font-size: clamp(5rem, 10vw, 8rem);
-        }
-    </style>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -57,11 +20,14 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="nav nav-underline flex-column flex-lg-row justify-content-center w-100">
-                    <li class="nav-item mx-3"><a class="nav-link active text-dark" href="#home">Home</a></li>
-                    <li class="nav-item mx-3"><a class="nav-link text-secondary" href="#destinations">Destinations</a>
+                    <li class="nav-item mx-3"><a class="nav-link active text-dark" href="./index.html">Home</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link text-secondary"
+                            href="./destinations.html">Destinations</a>
                     </li>
-                    <li class="nav-item mx-3"><a class="nav-link text-secondary" href="#lifestyle">Lifestyle</a></li>
-                    <li class="nav-item mx-3"><a class="nav-link text-secondary" href="#references">References</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link text-secondary" href="./lifestyle.html">Lifestyle</a>
+                    </li>
+                    <li class="nav-item mx-3"><a class="nav-link text-secondary" href="./references.html">References</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -82,12 +48,15 @@
         <h1 class="text-center fw-bold display-4 mb-4">Highlights</h1>
         <div class="row justify-content-center g-4">
 
+
             <div class="col-10 col-sm-6 col-md-4 col-lg-3">
                 <div class="card border-0 rounded-0 h-100">
                     <img src="assets/images/About.png" class="card-img rounded-0" alt="About">
                     <div class="card-img-overlay d-flex align-items-end p-0">
                         <div class="w-100 text-center bg-light bg-opacity-50 py-5">
-                            <h5 class="card-title m-0 fw-bold">About</h5>
+                            <a href="#about-italy" class="text-dark text-decoration-none fw-bold">
+                                <h5 class="card-title m-0">About</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +66,9 @@
                     <img src="assets/images/Destinations.png" class="card-img rounded-0" alt="Destinations">
                     <div class="card-img-overlay d-flex align-items-end p-0">
                         <div class="w-100 text-center bg-light bg-opacity-50 py-5">
-                            <h5 class="card-title m-0 fw-bold">Destinations</h5>
+                            <a href="destinations.html" class="text-dark text-decoration-none fw-bold">
+                                <h5 class="card-title m-0">Destinations</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +78,9 @@
                     <img src="assets/images/Lifestyle.png" class="card-img rounded-0" alt="Lifestyle">
                     <div class="card-img-overlay d-flex align-items-end p-0">
                         <div class="w-100 text-center bg-light bg-opacity-50 py-5">
-                            <h5 class="card-title m-0 fw-bold">Lifestyle</h5>
+                            <a href="lifestyle.html" class="text-dark text-decoration-none fw-bold">
+                                <h5 class="card-title m-0">Lifestyle</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -117,15 +90,16 @@
                     <img src="assets/images/Cuisine.png" class="card-img rounded-0" alt="Cuisine">
                     <div class="card-img-overlay d-flex align-items-end p-0">
                         <div class="w-100 text-center bg-light bg-opacity-50 py-5">
-                            <h5 class="card-title m-0 fw-bold">Cuisine</h5>
+                            <a href="lifestyle.html#menu" class="text-dark text-decoration-none fw-bold">
+                                <h5 class="card-title m-0">Cuisine</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container my-5 ">
+    <div class="container my-5" id="about-italy">
         <h1 class="text-center fw-bold display-4 mb-5">About Italy</h1>
         <div class="row justify-content-center align-items-center g-4 px-3">
             <div class="col-12 col-md-6 col-lg-4">
@@ -156,7 +130,7 @@
                 <div class="col-12 col-md-8 d-block d-md-none">
                     <div class="card text-bg-dark border-0 rounded-0">
                         <img src="assets/images/officialname.jpg" class="card-img rounded-0" alt="Official Name">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end "  style="line-height: 1;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end " style="line-height: 1;">
                             <strong>Italian Republic (Repubblica Italiana)</strong><br>
                             <small>Official Name</small>
                         </div>
@@ -165,7 +139,7 @@
                 <div class="col-6 col-md-4">
                     <div class="card text-bg-dark border-0 rounded-0">
                         <img src="assets/images/language.jpg" class="card-img rounded-0" alt="Flag of Italy">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end"  style="line-height: 1;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end" style="line-height: 1;">
                             <strong>Italian</strong><br>
                             <small>Language</small>
                         </div>
@@ -174,7 +148,7 @@
                 <div class="col-6 col-md-4">
                     <div class="card text-bg-dark border-0 text-end rounded-0">
                         <img src="assets/images/population.jpg" class="card-img rounded-0" alt="Italian People">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end"  style="line-height: 1;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end" style="line-height: 1;">
                             <strong>Around 60 million</strong><br>
                             <small>Population</small>
                         </div>
@@ -184,7 +158,7 @@
                     <div class="card text-bg-dark border-0 text-end rounded-0 ">
                         <img src="assets/images/area.jpg" class="card-img rounded-0" alt="Italy Area"
                             style="width:100%; height:100%; object-fit:cover;">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end"  style="line-height: 1;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end" style="line-height: 1;">
                             <strong>301,340 km²</strong><br>
                             <small>Area</small>
                         </div>
@@ -194,7 +168,7 @@
                     <div class="card h-100 text-bg-dark border-0 rounded-0">
                         <img src="assets/images/rome.webp" class="card-img rounded-0" alt="Rome"
                             style="width:100%; height:100%; object-fit:cover;">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end"  style="line-height: 1;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end" style="line-height: 1;">
                             <strong>Rome, Italy</strong><br>
                             <small>Capital City</small>
                         </div>
@@ -203,7 +177,7 @@
                 <div class="col-6 col-md-8 d-none d-md-block">
                     <div class="card text-bg-dark border-0 rounded-0">
                         <img src="assets/images/officialname.jpg" class="card-img rounded-0" alt="Official Name">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end"  style="line-height: 1;">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end" style="line-height: 1;">
                             <strong>Italian Republic (Repubblica Italiana)</strong><br>
                             <small>Official Name</small>
                         </div>
@@ -212,6 +186,91 @@
             </div>
         </div>
     </div>
+    <div class="container my-5">
+        <h1 class="text-center fw-bold display-4 mb-4">Major Cities</h1>
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card border-0 rounded-0 h-100">
+                    <img src="assets/images/bolzano.jpg" class="card-img rounded-0" alt="Bolzano">
+                    <div class="card-img-overlay d-flex align-items-end p-0">
+                        <div class="w-100 text-center bg-light bg-opacity-50 py-4">
+                            <h5 class="card-title m-0 fw-bold">Bolzano</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card border-0 rounded-0 h-100">
+                    <img src="assets/images/bologna.jpg" class="card-img rounded-0" alt="Bologna">
+                    <div class="card-img-overlay d-flex align-items-end p-0">
+                        <div class="w-100 text-center bg-light bg-opacity-50 py-4">
+                            <h5 class="card-title m-0 fw-bold">Bologna</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card border-0 rounded-0 h-100">
+                    <img src="assets/images/florence.jpg" class="card-img rounded-0" alt="Florence">
+                    <div class="card-img-overlay d-flex align-items-end p-0">
+                        <div class="w-100 text-center bg-light bg-opacity-50 py-4">
+                            <h5 class="card-title m-0 fw-bold">Florence</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card border-0 rounded-0 h-100">
+                    <img src="assets/images/milan.jpg" class="card-img rounded-0" alt="Milan">
+                    <div class="card-img-overlay d-flex align-items-end p-0">
+                        <div class="w-100 text-center bg-light bg-opacity-50 py-4">
+                            <h5 class="card-title m-0 fw-bold">Milan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card border-0 rounded-0 h-100">
+                    <img src="assets/images/rome.jpg" class="card-img rounded-0" alt="Rome">
+                    <div class="card-img-overlay d-flex align-items-end p-0">
+                        <div class="w-100 text-center bg-light bg-opacity-50 py-4">
+                            <h5 class="card-title m-0 fw-bold">Rome</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card border-0 rounded-0 h-100">
+                    <img src="assets/images/siena.jpg" class="card-img rounded-0" alt="Siena">
+                    <div class="card-img-overlay d-flex align-items-end p-0">
+                        <div class="w-100 text-center bg-light bg-opacity-50 py-4">
+                            <h5 class="card-title m-0 fw-bold">Siena</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center my-5">
+        <p class="mb-4">
+            These cities represent some of the main highlights of Italy, but there are many more places to discover.
+            The next page will show Italy’s UNESCO World Heritage sites and hidden gems.
+            Each destination tells a part of Italy’s history, culture, and natural beauty.
+        </p>
+        <div>
+            <a href="destinations.html" class="btn px-4 py-3 border-0 rounded-0 shadow-sm my-5"
+                style="background-color: #FFF487; color: #000; display:inline-block; text-decoration:none;">
+                Explore Italy’s Destinations
+            </a>
+        </div>
+    </div>
+
 
     <footer class="bg-light text-center border-top py-4 mt-auto w-100">
         <div class="container">
