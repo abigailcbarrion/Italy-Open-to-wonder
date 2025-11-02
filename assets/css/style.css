@@ -23,9 +23,9 @@ footer {
 
 @font-face {
   font-family: 'Niagara Solid';
-  src: url('/assets/fonts/NiagaraSolid.woff2') format('woff2'),
-       url('/assets/fonts/NiagaraSolid.woff') format('woff'),
-       url('/assets/fonts/NiagaraSolid.TTF') format('truetype');
+  src: url('../fonts/NiagaraSolid.woff2') format('woff2'),
+       url('../fonts/NiagaraSolid.woff') format('woff'),
+       url('../fonts/NiagaraSolid.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
